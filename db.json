@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "firstName": "Shah",
+      "lastName": "Uxama",
+      "birthdate": "2022-06-16",
+      "gender": "m",
+      "company": "ABC ...xoxo",
+      "jobExperience": 2,
+      "salary": 12,
+      "profile": "cold.jpg",
+      "id": 1
+    },
+    {
+      "firstName": "Usama",
+      "lastName": "Mehmood",
+      "birthdate": "2022-06-11",
+      "gender": "m",
+      "education": "matric",
+      "company": "fff",
+      "jobExperience": 33,
+      "salary": 333,
+      "profile": "hot.jpg",
+      "id": 2
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

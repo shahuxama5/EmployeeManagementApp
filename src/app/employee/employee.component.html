@@ -1,0 +1,68 @@
+<div class="container-fluid g-0 p-2">
+  <div class="row g-0">
+    <div class="col-md-2 d-flex justify-content-center align-item-center">
+      <img src="../../assets/Images/{{employee.profile}}" class="profile">
+    </div>
+    <div class="col ps-2">
+      <div class="row g-0">
+        <div class="col-md-10 text-center">
+          <span class="name text-info">{{employee.firstName | titlecase}} {{employee.lastName | titlecase}}</span>
+        </div>
+        <div class="col-md-2 d-flex justify-content-center align-item-center">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-outline-success" (click)="editEmployee()"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button type="button" class="btn btn-outline-danger" (click)="deleteEmployee()"><i class="fa-solid fa-trash-can"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 mt-3">
+        <div class="col-md">
+          <table class="table table-hover mx-auto">
+            <thead class="text-center fs-5 fst-italic text-info">
+              <tr>
+                <th colspan="2">Personal Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Birthdate</td>
+                <td>{{employee.birthdate}}</td>
+              </tr>
+              <tr>
+                <td>Gender</td>
+                <td>{{employee.gender === 'm' ? 'male' : 'Female'}}</td>
+              </tr>
+              <tr>
+                <td>Education</td>
+                <td>{{employee.education | titlecase}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <table class="table table-hover mx-auto">
+            <thead class="text-center fs-5 fst-italic text-info">
+              <tr>
+                <th colspan="2">Job Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Company</td>
+                <td>{{employee.company | titlecase}}</td>
+              </tr>
+              <tr>
+                <td>Experience</td>
+                <td>{{employee.jobExperience}} years</td>
+              </tr>
+              <tr>
+                <td>Salary</td>
+                <td>{{employee.salary}} LPA</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
